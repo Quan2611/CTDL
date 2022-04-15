@@ -1,0 +1,41 @@
+Trong hầu hết các bài toán quản lí đều có khái niệm danh sách
+
+Trong các NNLT đều có sẵn kiểu mảng để thể hiện danh sách
+
+Khi khai báo mảng phải chi ra số phần tử sẽ dùng, điều này sẽ dẫn đến 1 số hệ lụy:
+ _Dư thừa nếu không dùng hết
+ _Dùng hết thì không mở rộng được
+
+	Gặp khai báo mảng, HĐH cấp cho chương trình vùng nhớ đúng bằng số lượng chúng 
+	ta khai báo.
+
+Vậy xin bao nhiêu là đủ?
+- Bộ nhớ chương trình: Lưu trữ dữ liệu của chương trình khi chương trình thực 
+hiện (nằm ở thanh RAM)
+
+Chúng ta muốn gì khi làm việc với danh sách???
+- Muốn dùng đến đâu thuê đến đó
+- Danh sách không bị giới hạn số phần tử, chỉ bị giới hạn bởi bộ nhớ của máy tính
+- Vẫn phải đảm bảo các phép toán trên danh sách mà ta đã làm;
+	+ Thêm phần tử
+	+ Chèn phần tử
+	+ Xóa phần tử
+	+ Cập nhật phần tử
+
+Cụ thể hơn, trong C++ muốn có 1 lớp List có thể thực hiện được điều sau mà không bị
+giới hạn số phần tử cho trước. Chương trình sau sẽ dừng khi tràn số nguyên hoặc bộ
+nhớ hết.
+
+	List<int> ds;
+	int i = 1
+	while(1)
+	{
+	   ds.Add(i);
+	   i++;	
+	}
+
+Nhiệm vụ xem code mẫu của thầy giáo để hình dùng cách cài đặt ds thông qua danh sách
+liên kết đơn
+
+
+

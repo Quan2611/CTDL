@@ -1,0 +1,19 @@
+Cây -Tree 
+Tự đọc về nó với từ khóa "Cấu trúc dữ liệu cây"
+	"Tree Data type"
+ 
+Tree<string> t;
+t.AddRoot("Việt Nam");
+t.Add("Hà Nội", "Việt Nam");
+t.Add("TP. Hồ Chí Minh", "Việt Nam");
+t.Add("Hải Phòng", "Việt Nam");
+t.Add("Đà Nẵng, "Việt Nam Ơi"); // Không Add được vì ko có Việt Nam ơi
+t.Add("Hoàn Kiếm", "Hà Nội");
+t.Add("Đống Đa", "Hà Nội");
+t.Add("Hai Bà Trưng", "Hà Nội A");
+t.Add("Quận Nhất", "TP.Hồ Chí Minh");
+t.Add("Đống Đa","Hà Nội");//Không được vì đã có đống đa là con của Hà Nội
+...
+List<string> quan_hn=t.GetListChildren("Hà Nội");
+for(int i = 1; i<= quan_hn.Count(); i++)
+cout<<quan_hn.GetItem(i)<<end;

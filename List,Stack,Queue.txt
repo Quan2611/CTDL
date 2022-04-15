@@ -1,0 +1,40 @@
+Danh sách (List):
+	-Tập hợp các phần tử có cùng kiểu
+	-Chỉ số để làm việc với phần tử (pos)
+	-Các phương thức:
+	 +Add(t):Thêm phần tử t vào danh sách(thêm vào cuối)
+	 +AddFirst(t):Thêm phần tử t vào danh sách
+	 +Insert(pos,t):Chèn phần tử t vào vị trí pos trong danh sách
+	 +Delete(pos): Xóa phần tử ở vị trí pos trong danh sách
+	 +Update(pos,t): Câp nhật phần tử ở vị trí pos bằng giá trị mới t
+
+	Có mấy cách cài đặt List trong C++ được giới thiệu? 2 cách là dùng mảng hoặc
+	danh sách liên kết
+
+-Ngăn xếp (Stack): 
+	-Là một danh sách đặc biệt, trong đó việc thêm vào và lấy ra chỉ 
+	thực hiện ở 1 đầu của danh sách.
+	-Không làm việc với phần tử bất kỳ,chỉ làm việc với phần tử ở đỉnh của ngăn
+	xếp.
+	-Các phương thức:
+		+Push(t) : Đẩy phần tử t vào ngăn xếp
+		+Pop()	 : Trả lại phần tử trên đỉnh và
+		loại phần tử trên đỉnh ra khỏi ngăn xếp
+		+T GetTop():Lấy giá trị của phần tử trên đỉnh danh sách
+		+bool IsEmpty():Trả về true nếu danh sách rỗng
+	Nhiều tài liệu gọi nó là danh sách hoạt động theo cơ chế Last In Firs Out(LIFO)
+
+-Hàng đợi (Queue):
+  -Là một danh sách đặc biệt, trong đó việc thêm vào thực hiện ở đầu này, lấy ra thực
+	hiện ở đầu kia(Giống như xếp hàng để làm việc gì đó)
+  -Không làm việc với phần tử bất kỳ, chỉ làm việc với phần tử ở 2 đầu mút của danh
+	sách
+  -Các phương thức:
+	+EnQueue(t): Đưa phần tử t vào hàng đợi
+	+T DeQueue(): Trả lại phần tử đến lượt và loại khỏi hàng đợi
+	+T GetFirst(): Trả lại phần tử đầu hàng đợi
+	+bool isEmpty(): trả về true nếu hàng đợi rỗng 
+	+int Count(): trả lại số phần tử trong hàng đợi
+
+Cài đặt Stack,Queue bằng mảng và dslk đều được.
+			

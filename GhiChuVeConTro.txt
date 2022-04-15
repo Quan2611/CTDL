@@ -1,0 +1,55 @@
+1 chương trình C++ gồm các câu lệnh của C++, được lưu trong các file .h hoặc
+.cpp trong bộ nhớ ngoài của máy tính.
+Khi thực thi chương trình này, một tiến trình thực thi được tạo ra.
+
+Tiến trình : Có thời điểm bắt đầu và kết thúc
+
+Trong các chương trình có khai báo biến, khi tiến trình thực hiện, các biến này sẽ
+được cấp phát vùng nhớ ở bộ nhớ trong (RAM).
+Mỗi tiến trình khác nhau các biến được cấp phát và ở địa chỉ bộ nhớ khác nhau
+
+Trong các NNLT cung cấp phép toán dể lấy giá trị của vùng nhớ khi biết địa chỉ
+
+Trong C++ đó là phép * p;
+
+Ta có thể khai báo biến để lưu lại địa chỉ của bộ nhớ không?
+Có nếu có kiểu dữ liệu địa chỉ :)
+Trong c++ có kiểu địa chỉ, kiểu này không có tên cụ thể mà tùy thuộc vào địa chỉ
+của nó lưu trữ loại giá trị gì
+
+Địa chỉ cho số nguyên là: int *
+Địa chỉ cho số thực là: float * hoặc double *
+Địa chỉ cho kí tự là: char *
+
+Ví dụ:
+    int a = 7;
+    cout<<a<<endl;
+    cout<&a<<endl;
+    cout<<*&a<<endl;
+    int * p;	
+    p = &a;
+Trong ví dụ trên, p là biến thuộc kiểu địa chỉ số nguyên, do đó nó được gán bằng
+&a, vì &a là địa chỉ của một biến kiểu nguyên.
+
+Trong trường hợp này để in ra giá trị của a, ta có thể dùng câu lệnh
+	cout<<*p; //Vì p nó đang chứa địa chỉ của a.
+Vậy con trỏ thực chất là một biến chứa địa chỉ của biến khác.
+
+	float*p1;
+	cout<<*p1;	
+	//Có thể bị lỗi vì p1 được phát vùng nhớ, có 1 giá trị bất kỳ
+	//Từ giá trị đó, ta không biết và không được phép truy cập vào vùng
+	nhớ có địa chỉ đang nằm trong p1
+	p1 = &c;
+
+Còn 1 cách khác để gán trị cho con trỏ, bằng cách sử dụng câu lệnh thuê vùng nhớ.
+- Cách 1: Gán giá trị cho con trỏ bằng địa chỉ của biến khác
+- Cách 2: Sử dụng câu lệnh thuê vùng nhớ
+
+Trong C++ có câu new dùng để thuê một vùng nhớ.
+Cú pháp: new Kiểu_Dữ_Liệu;
+nó sẽ trả về địa chỉ của vùng nhớ mà nó thuê được.
+
+Ví dụ:  int*p;
+	p = new int;
+	//Viết gộp: int *p = new int;

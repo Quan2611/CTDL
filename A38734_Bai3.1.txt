@@ -1,0 +1,62 @@
+#include <iostream>
+using namespace std;
+template <class T>
+class Queue
+{
+private:
+    T a[100];
+    int N;
+
+public:
+    Queue()
+    {
+        N = 0;
+    }
+    void EnQueue(T value)
+    {
+        a[N++] = value;
+    };
+    T DeQueue()
+    {
+        T value = a[0];
+        for (int i = 0; i < N; i++)
+        {
+            a[i] = a[i + 1];
+        }
+        N--;
+        return value;
+    };
+    T GetTail() const
+    {
+        return a[N - 1];
+    }
+    bool IsEmpty() const
+    {
+        return N == 0;
+    };
+};
+
+int main()
+{
+    int n;
+    cout << "Nhap n: ";
+    cin >> n;
+    int b[n];
+    for (int i = 0; i < n; i++)
+    {
+        cin >> b[i];
+    }
+
+    Queue<int> c;
+    for (int i = 0; i < n; i++)
+    {
+        if (b[i] % 2 == 1)
+        {
+            c.EnQueue(b[i]);
+        }
+    }
+    while (!c.IsEmpty())
+    {
+        cout << c.DeQueue() << " ";
+    }
+}

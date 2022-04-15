@@ -1,0 +1,64 @@
+ĐỆ QUY:
+  Chương trình gồm một dãy các câu lệnh
+  Chương trình chính có thể được chia thành nhiều chương trình con(hàm) 
+  Chương trình chính là dãy các câu lệnh thực hiện 1 thuật toán nào đó
+  Chương trình con cũng là dãy các lệnh thực hiện 1 thuật toán con nào đó, nó thường:
+	+ Có danh sách đầu vào và trả về kết quả
+	+ Các đầu vào gọi là các tham số đầu vào
+	+ Kết quả chính là trả vể của chương trình cno (hàm)
+	Ví dụ:
+	 int Tong(int a, int b)//tham số đầu vào(tham số hình thức)
+	 {
+		return a+b;	
+	 }	
+
+	 Hàm main (nơi gọi)
+
+	 cout<<Tong(5,7)<<endl;//tham số truyền vào
+
+Đệ quy là lời gọi tới chính hàm đó trong định nghĩa của hàm đó
+Ví dụ từ đơn giản đến hơi phức tạp hơn 1 đã được minh họa qua lời gọi hàm F 
+Viết chương trình in ra màn hình của N giai thừa
+ N! = 1 x 2 x ... x N
+
+ N! = N * (N-1)!
+ GiaiThua(N)
+
+Viết chương trình in ra màn hình 2^N
+ 2^6 = 2 x 2 x.. x 2 (6 lần) = 64
+ 2^N = 2 x 2^(N-1)
+ HaiMu(N)
+
+Viết chương trình in ra màn hình số Fibonanci thứ N:
+ Dãy Fibo như sau : 1 1 2 3 5 8 13 21 34 55 89....
+ Fibo(7) = 13
+ Fibo(7) = Fibo(6) + Fibo(5)
+ Hãy viết hàm đệ quy Fibo(N)	
+
+Dạng chung của đệ quy:
+ + Tìm trường hợp dừng
+ + Phát hiện quy luật biểu diễn thuật toán qua chính nó với bộ dữ liệu nhỏ hơn
+
+Sinh tất cả các xâu nhị phân độ dài N.
+Ví dụ N =2 :
+00
+01
+10
+11
+N = 3:
+000
+001
+010
+011
+100
+101
+110
+111
+
+BTVN: Sinh tất cả các xâu tam phâm, bát phân, thập phân,thâp lục phân độ dài N;
+      Cho các chữ cái sau:'A','B','C','D',hãy tạo ra tất cả cấc xâu độ dài 3 từ các
+chữ cái này : 
+ AAA,AAB,AAC,AAD,ABA,ABB,ABC,ABD,ACA,ACB,ACC,ACD,BAA,BAB,BAC,BAD,BBA,BBB,BBC,BBD,CAA,CAB,CAC,CBA,CBB,CBC,
+CCA,CCB,CCC
+      
+

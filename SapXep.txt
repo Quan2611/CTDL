@@ -1,0 +1,16 @@
+Kịch bản test sắp xếp:
+Công việc 1:
+-Có bộ sinh số ngẫu nhiên vào file data.txt (có thể tên file khác)
+-Việc sinh số này độc lập với việc đọc file và sắp xếp, khi nào muốn bộ số liệu khác
+mới cần thực hiện
+Cần 1 file data.txt chứa 30.000
+Công việc 2:
+-Đọc file data.txt
+
+Độ phức tạp của thuật toán là 
+
+
+Thuật toán MergeSort xuất phát từ 2 mảng đã được sắp xếp, thay vì ghép chúng với nhau 
+rồi sắp xếp, ta tiến hành trộn chúng với nhau sẽ mất ít thời gian hơn
+
+Đã code thuật toán trên máy của Quân
